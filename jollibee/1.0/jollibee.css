@@ -162,6 +162,49 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce-page .widget-area .widget.woocommerce ul.product_list_widget li ins > span > span{
     padding-left:0;
 }*/
+/*
+	2: WooCommerce Widgets
+*/
+.woocommerce-page .widget-area .widget.woocommerce ul li{
+	list-style: outside none;			
+}
+
+/*
+	2.1: WCProduct Search	
+*/
+
+/*
+	2.2: WC Products
+*/
+
+/*
+	2.3: WC Average Rating
+*/
+
+/*
+	2.4: WC Cart	
+*/
+
+/*
+	2.5: WC Layered Nav Filter by	
+*/
+
+
+/*
+	2.6: WC Layered Nav Filter Active Filters
+*/
+
+/*
+	2.7:	Product Search	
+*/
+
+/*
+	2.8:	Product Search	
+*/
+
+
+
+
 .widget-area .widget.woocommerce ul.product_list_widget li del > span {
 	color: #ca5b4e;
 }
@@ -539,9 +582,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     color: #fff;
 	text-decoration: none;
 }
-.woocommerce-page .attachment-shop_single.size-shop_single.wp-post-image {
-}
-
 .woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button {
   	display: block;
   	margin: 0 auto;
