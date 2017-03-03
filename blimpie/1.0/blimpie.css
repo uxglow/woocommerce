@@ -445,7 +445,10 @@ textarea:focus,
 	box-shadow: 0 0 5px #555 inset;;
     color: #555;
 }
-.woocommerce-page .attachment-shop_single.size-shop_single.wp-post-image {
+.woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button {
+  	display: block;
+  	margin: 0 auto;
+  	width: 80%;
 }
 
 /*
