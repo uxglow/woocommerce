@@ -237,7 +237,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce form .form-row.woocommerce-validated input.input-text, 
 .woocommerce form .form-row.woocommerce-validated select,
 .woocommerce form .form-row input.input-text, 
-.woocommerce form .form-row textarea{
+.woocommerce form .form-row textarea,
+.widget-area .widget.woocommerce.widget_product_search search-field{
 	border: 1px solid #ccc;
     border-radius: 0px;
     box-sizing: border-box;
@@ -277,7 +278,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce-page #review_form #respond textarea:focus, 
 .woocommerce form .form-row.woocommerce-validated input.input-text:focus,
 .woocommerce form .form-row input.input-text:focus, 
-.woocommerce form .form-row textarea:focus{
+.woocommerce form .form-row textarea:focus,
+.widget-area .widget.woocommerce.widget_product_search search-field:focus{
 	border: 1px solid #fe8f82;
 	text-shadow: 0px 1px 1px #555;
     color: #333;
@@ -522,9 +524,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce-page .widget input[type="button"], 
 .woocommerce-page .widget input[type="reset"], 
 .woocommerce-page .widget input[type="submit"],
-.woocommerce-page .widget .buttons .button.wc-forward,
 .woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button,
-.woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button{
+.widget-area .widget.woocommerce.widget_product_search input[type="button"],
+.woocommerce-page ul.products li.product .button.product_type_variable.add_to_cart_button{
 	background-color: #6A9D5C;
     border: medium none;
 	border-radius: 0;
@@ -546,11 +548,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce-page .widget-area .widget button, 
 .woocommerce-page .widget-area .widget input[type="button"], 
 .woocommerce-page .widget-area .widget input[type="reset"], 
-.woocommerce-page .widget-area .widget input[type="submit"] {
+.woocommerce-page .widget-area .widget input[type="submit"],
+.widget-area .widget.woocommerce.widget_product_search input[type="button"] {
   	right: 0;
   	top: 0;
 }
-.woocommerce-page .widget-area .widget input[type="search"] {
+.woocommerce-page .widget-area .widget input[type="search"],
+.widget-area .widget.woocommerce.widget_product_search input[type="button"] {
   	font-size: 12px;
   	height: 32px;
   	padding: 0 0 0 6px;
@@ -574,7 +578,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .woocommerce-page .widget .buttons .button.wc-forward:hover,
 .woocommerce-page .widget .buttons .button.wc-forward:focus,
 .woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button:hover,
-.woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button:focus{
+.woocommerce-page ul.products li.product .button.product_type_simple.add_to_cart_button:focus,
+.widget-area .widget.woocommerce.widget_product_search input[type="button"]:hover,
+.widget-area .widget.woocommerce.widget_product_search input[type="button"]:focus,
+.woocommerce-page ul.products li.product .button.product_type_variable.add_to_cart_button:focus,
+.woocommerce-page ul.products li.product .button.product_type_variable.add_to_cart_button:hover,
+.woocommerce-page ul.products li.product .button.product_type_variable.add_to_cart_button:focus,
+.woocommerce-page ul.products li.product .button.product_type_variable.add_to_cart_button:hover{
 	background-color: #86b978;
 	box-shadow:1px 1px 2px #555;
 	-moz-box-shadow: 1px 1px 2px #555;
@@ -594,6 +604,23 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 	margin-bottom: 5px;
   	margin-right: 5px;
 }
+.woocommerce-page .widget_shopping_cart .buttons a.button.wc-forward, 
+.woocommerce-page .widget_shopping_cart .buttons a.button.checkout.wc-forward, 
+.widget_shopping_cart .buttons a.button.wc-forward, 
+.widget_shopping_cart .buttons a.button.checkout.wc-forward {
+  	padding: 6px 8px;
+  	text-align: center;
+  	width: 46%;
+}
+.woocommerce-page .widget_shopping_cart .buttons a.button.wc-forward,
+.widget_shopping_cart .buttons a.button.wc-forward{
+	margin: 0 5% 0 0;	
+}
+.woocommerce-page .widget_shopping_cart .buttons a.button.checkout.wc-forward,
+.widget_shopping_cart .buttons a.button.checkout.wc-forward{
+	margin: 0;	
+}
+
 /*
 	Single Product
 */
