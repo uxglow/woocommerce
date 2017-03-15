@@ -85,6 +85,10 @@ Tags: WooCommerce-page, WooCommerce Styles, Mint Sauce
 .woocommerce-page ul{
 	list-style: none;
 }
+body.woocommerce-page #primary #main .entry-header, 
+body.woocommerce-page #primary #main .entry-content{
+ width: 100%;
+}
 /* 
 	WC Pagination
 */
@@ -536,15 +540,23 @@ Tags: WooCommerce-page, WooCommerce Styles, Mint Sauce
 	width: 70px;
 }
 .woocommerce-page table.shop_table td.product-name a,
+.woocommerce-page table.shop_table td.product-thumbnail a,
+.woocommerce-page table.shop_table td.product-thumbnail a img,
 .woocommerce-page table.shop_table td.product-remove a{
 	box-shadow: none;
 }
 .woocommerce-page table.shop_table td.product-name a:hover{
 	text-decoration:underline;	
 }
+.woocommerce-page table.cart td.actions{
+	padding-left:8px;
+	padding-right:8px;	
+}
 .woocommerce table.cart td.actions .input-text, 
 .woocommerce-page #content table.cart td.actions .input-text, 
-.woocommerce-page table.cart td.actions .input-text{
+.woocommerce-page table.cart td.actions .input-text {
+    float: left;
+    margin-right: 12px;
 	width:120px;	
 }
 /*
